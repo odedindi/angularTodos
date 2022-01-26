@@ -2,7 +2,7 @@
 
 It is more for myself, my first angular app.
 
-<img src="./src/assets/Screenshot.png" height="250px" alt="screenshot">
+<img src="./src/assets/Screenshot.png" height="500px" alt="screenshot">
 
 ## Tech/framework used
 
