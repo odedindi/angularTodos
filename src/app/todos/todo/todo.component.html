@@ -1,0 +1,33 @@
+<li *ngIf="todo" [class.completed]="todo.completed">
+  <div class="todo-content">
+    <input
+      type="checkbox"
+      class="toggle"
+      [checked]="todo.completed"
+      (click)="toggle()"
+    />
+    <kendo-textbox
+      #editTodo
+      class="todo-description"
+      [readonly]="!editing"
+      [(ngModel)]="todo.description"
+      placeholder="description"
+      (dblclick)="edit()"
+      (blur)="save(editTodo.value)"
+      (keyup.enter)="save(editTodo.value)"
+      (keyup.escape)="cancelEditing()"
+    >
+    </kendo-textbox>
+
+    <button
+      kendoButton
+      fillMode="flat"
+      rounded="medium"
+      class="destroy-button"
+      (click)="remove()"
+    >
+      X
+    </button>
+  </div>
+  <p class="date-stamp">{{ todo.createdAt | date: "shortDate" }}</p>
+</li>

@@ -1,0 +1,93 @@
+li {
+  width: 100%;
+  min-height: 50px;
+  float: left;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  line-height: 22px;
+
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px rgba(44, 62, 80, 0.1);
+
+  padding: 14px 100px 14px 14px;
+  word-break: break-word;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+
+  border: 0px solid rgba(123, 123, 123, 0.498039);
+
+  margin-bottom: 0.3rem;
+
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+  color: var(--color-primary);
+  font-weight: bold;
+  position: relative;
+  font-size: 24px;
+  border-bottom: 1px dotted #ccc;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li.completed .todo-description {
+  color: var(--color-secondary);
+  text-decoration: line-through;
+}
+
+.toggle {
+  cursor: pointer;
+  transform: scale(1.25);
+}
+
+.todo-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 100%;
+}
+
+.todo-description {
+  color: var(--color-primary);
+  font-weight: bold;
+
+  white-space: pre;
+  word-break: break-word;
+  padding: 1.5rem 2rem;
+
+  display: block;
+  line-height: 1.2;
+
+  border: none;
+
+  min-width: 300px;
+}
+.todo-description:focus {
+  outline: 0;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.destroy-button {
+  position: relative;
+  left: 6rem;
+}
+
+.date-stamp {
+  color: rgb(153, 153, 153);
+  font-weight: bold;
+  font-style: italic;
+
+  align-self: end;
+  width: 4rem;
+  font-size: 0.7rem;
+  position: relative;
+  top: 1.5rem;
+  left: 4rem;
+}
