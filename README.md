@@ -109,7 +109,8 @@ and in the component is used so:
 _the use of the componentDestroyed subject is a convenient way to make sure all subscription will be unsubscribed._
 
 - custom directive using GSAP for a fadeIn and fadeOut touch:
-  _first create the core animation directive_
+ 
+ *_first create the core animation directive_
 
 ```
 export class CoreAnimationDirective {
@@ -153,7 +154,7 @@ export class CoreAnimationDirective {
 }
 ```
 
-_then create any kind of effect on top of it_
+*_then create any kind of effect on top of it_
 
 ```
 @Directive({
@@ -207,9 +208,9 @@ export class FadeInAnimationDirective
 
 ## Contributing
 
-If you'd like to contribute, by all means fork the repository and use a feature branch.
-Pull requests are warmly welcome.
-there are few known bugs and some unintentional behavior
+- If you'd like to contribute, by all means fork the repository and use a feature branch.
+- Pull requests are warmly welcome.
+- There are few known bugs and some unintentional behaviors.
 
 ## Links
 
