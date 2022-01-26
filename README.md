@@ -1,6 +1,5 @@
+*this repo is more for myself, my first angular app :)
 # Angular Todo Example with rx and gsap
-
-It is more for myself, my first angular app.
 
 <img src="./src/assets/Screenshot.png" height="600px" alt="screenshot">
 
