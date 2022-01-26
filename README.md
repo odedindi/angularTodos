@@ -212,7 +212,7 @@ export class FadeInAnimationDirective
 - Repository: git@github.com:odedindi/angularTodos.git
 - Issue tracker: https://github.com/odedindi/angularTodos/issues
     #### I value the care and effort to improve the security and privacy of this project!
-  - In case of sensitive bugs like security vulnerabilities, please contact
+- In case of sensitive bugs like security vulnerabilities, please contact
     odedindi@gmail.com directly instead of using issue tracker.
     
 ## Licensing
