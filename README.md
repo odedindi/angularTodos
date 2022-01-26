@@ -28,7 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Features
 
-- What's all the bells and whistles this little bad boy can perform?
+### What's all the bells and whistles this little bad boy can perform?
 
 * Most important take your todos and show it in a friendly way to monitor progress.
 * Inspired by [angular-rx-todos](https://github.com/RxJS-CN/angular-rxjs-todos) todos.service based on rx BehaviorSubject:
