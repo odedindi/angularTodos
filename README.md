@@ -131,26 +131,23 @@ export class CoreAnimationDirective {
   }
 
   protected animateIn() {
-    if (this.timeline.isActive()) {
-      this.timeline.kill();
-    }
+    if (this.timeline.isActive()) this.timeline.kill();
+
     this.timeline.play();
   }
 
   protected animateOut(parentViewRef: ViewContainerRef) {
-    if (this.timeline.isActive()) {
-      this.timeline.kill();
-    }
+    if (this.timeline.isActive()) this.timeline.kill();
+
     setTimeout(() => {
       this.timeline.timeScale(this.duration).delay(0).reverse();
-      setTimeout((_: any) => {
-        if (parentViewRef) {
-          parentViewRef.clear();
-        }
+      setTimeout((_: never) => {
+        if (parentViewRef) parentViewRef.clear();
       }, this.duration * 1000);
     }, this.delay * 1000);
   }
 }
+
 ```
 
 *_then create any kind of effect on top of it_
@@ -190,7 +187,6 @@ export class FadeInAnimationDirective
 <section *ngIf="visibleTodos.length">
   <ul class="todos">
     <todo
-      class="todo"
       *ngFor="let todo of visibleTodos"
       fadeInAnimation
       [todo]="todo"
@@ -198,7 +194,6 @@ export class FadeInAnimationDirective
       (handleRemove)="remove($event)"
       (handleEdit)="update($event)"
       (click)="onSelect(todo)"
-      [class.selected]="todo === selectedTodo"
     >
     </todo>
   </ul>
